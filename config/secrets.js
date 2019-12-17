@@ -1,3 +1,3 @@
 module.exports = {
-    jwtSecret: process.env.JWT_SECRET || 'authorizationsprintsecret'
-}
+    jwtSecret: process.env.JWT_SECRET || "allwomenarequeens"
+  };
