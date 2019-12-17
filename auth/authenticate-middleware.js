@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
 
   const token = req.headers.authorization.split(' ')[1];
 
-  if (req.decodedJwt) { // will check for a token that is already authorized.
+  if (req.decodedJwt) { 
     next();
   } else if (token && (token !== undefined)) {
     jwt.verify(token, secrets.jwtSecret, (err, decodedJwt) => {
